@@ -1,9 +1,7 @@
+import Navigation from "./routes/Navigation";
+
 function App() {
-  return (
-    <>
-      <h1>App</h1>
-    </>
-  );
+  return <Navigation />;
 }
 
 export default App;
