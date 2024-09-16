@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
 
-const NavRoute = ({ routeName, url }: { routeName: string; url: string }) => {
+interface NavRouteProps {
+  routeName: string;
+  url: string;
+}
+
+const NavRoute: React.FC<NavRouteProps> = ({ routeName, url }) => {
   return (
     <li>
       <NavLink
