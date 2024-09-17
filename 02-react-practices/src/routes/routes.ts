@@ -19,18 +19,18 @@ export const routes: RouteType[] = [
     to: "/lazy1",
     path: "lazy1",
     Component: Lazy1,
-    name: "Lazy-1",
+    name: "Lazy 1",
   },
   {
     to: "/lazy2",
     path: "lazy2",
     Component: Lazy2,
-    name: "Lazy-2",
+    name: "Lazy 2",
   },
   {
     to: "/lazy3",
     path: "lazy3",
     Component: Lazy3,
-    name: "Lazy-3",
+    name: "Lazy 3",
   },
 ];
