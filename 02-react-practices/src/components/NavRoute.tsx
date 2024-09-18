@@ -10,6 +10,7 @@ const NavRoute: React.FC<NavRouteProps> = ({ routeName, url }) => {
     <li>
       <NavLink
         to={url}
+        style={{ textDecoration: "none", color: "white" }}
         className={({ isActive }) => (isActive ? "nav-active" : "")}
       >
         {routeName}

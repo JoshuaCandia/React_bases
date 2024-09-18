@@ -1,6 +1,6 @@
 export interface RouteType {
   to: string;
   path: string;
-  Component: React.FC;
+  Component: React.FC | string;
   name: string;
 }
