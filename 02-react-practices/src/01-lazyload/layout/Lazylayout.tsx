@@ -19,7 +19,10 @@ const Lazylayout = () => {
             element={<route.Component />}
           />
         ))}
-        <Route path="*" element={<Navigate replace to="lazy1" />} />
+        <Route
+          path="*"
+          element={<Navigate replace to={routesLayoutDash[0].to} />}
+        />
       </Routes>
     </div>
   );
