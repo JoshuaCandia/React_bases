@@ -1,9 +1,22 @@
 import { RouteType } from "../../routes/types";
-export const routesLayouDash: RouteType[] = [
+import { LazyPage1, LazyPage2, LazyPage3 } from "../pages";
+export const routesLayoutDash: RouteType[] = [
   {
     path: "lazy1",
     to: "lazy1",
-    Component: "LazyLayoutComponent",
-    name: "LazyLayout - Dash",
+    Component: LazyPage1,
+    name: "LazyLayout - Page 1",
+  },
+  {
+    path: "lazy2",
+    to: "lazy2",
+    Component: LazyPage2,
+    name: "LazyLayout - Page 2",
+  },
+  {
+    path: "lazy3",
+    to: "lazy3",
+    Component: LazyPage3,
+    name: "LazyLayout - Page 3",
   },
 ];

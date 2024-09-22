@@ -1,15 +1,26 @@
+import { Navigate, Route, Routes } from "react-router-dom";
 import { NavRoute } from "../../components";
-import { routesLayouDash } from "./routes";
+import { routesLayoutDash } from "./routes";
 
 const Lazylayout = () => {
   return (
     <div>
       <h1>Lazylayout Page</h1>
       <ul>
-        {routesLayouDash.map((route) => (
+        {routesLayoutDash.map((route) => (
           <NavRoute key={route.path} routeName={route.name} url={route.to} />
         ))}
       </ul>
+      <Routes>
+        {routesLayoutDash.map((route) => (
+          <Route
+            key={route.path}
+            path={route.path}
+            element={<route.Component />}
+          />
+        ))}
+        <Route path="*" element={<Navigate replace to="lazy1" />} />
+      </Routes>
     </div>
   );
 };
